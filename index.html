@@ -63,38 +63,57 @@
         cursor: pointer;
         background-color: white;
       }
+      .commonIcon {
+        color: white;
+      }
+      .subheadIcons {
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <div class="container px-1">
-      <div class="text-left text-white p-3 fs-2 heading fw-bolder">
+    <div class="container px-1 mx-auto">
+      <!-- <div class="text-white bg-dark d-sm-none">Hello</div> -->
+      <div class="text-left text-white p-3 fs-3 heading fw-bolder">
         WhatsApp
       </div>
       <div class="container">
         <div class="row subHeading">
           <div
-            class="col-3 text-center p-2 textColor fs-4 commonClass"
+            class="col-3 text-center p-2 textColor commonClass"
             id="pageMain"
           >
-            Main Page
+            <p class="d-none d-sm-block m-0">Main Page</p>
+            <span class="d-block d-sm-none commonIcon" id="subheadMain"
+              ><i class="fa fa-comment"></i
+            ></span>
           </div>
           <div
-            class="col-3 text-center p-2 textColor fs-4 commonClass"
+            class="col-3 text-center p-2 py-1 textColor commonClass"
             id="pageChat"
           >
-            Chats
+            <p class="d-none d-sm-block m-0">Chats</p>
+            <span class="d-block d-sm-none commonIcon" id="chatIcon"
+              ><i class="fa fa-dot-circle-o"></i
+            ></span>
           </div>
           <div
-            class="col-3 text-center p-2 textColor fs-4 commonClass"
+            class="col-3 text-center p-2 textColor commonClass"
             id="pageProfile"
           >
-            Profile
+            <p class="d-none d-sm-block m-0">Profile</p>
+            <span class="d-block d-sm-none commonIcon" id="profileIcon"
+              ><i class="fa fa-user"></i
+            ></span>
           </div>
           <div
-            class="col-3 text-center p-2 textColor fs-4 commonClass"
+            class="col-3 text-center p-2 textColor commonClass"
             id="pageUnreadChats"
           >
-            Unread Chats
+            <p class="d-none d-sm-block m-0">Unread Chats</p>
+            <span class="d-block d-sm-none commonIcon" id="unreadchatIcon"
+              ><i class="fa fa-envelope"></i
+            ></span>
           </div>
         </div>
       </div>
@@ -103,7 +122,9 @@
           <div class="row mx-2 my-3">
             <div class="col-sm-11 col-9">
               <div class="row">
-                <div class="col-sm-1 col-3 d-flex align-items-center">
+                <div
+                  class="col-sm-1 col-3 d-flex justify-content-center align-items-center"
+                >
                   <img
                     src="https://avinashdv.github.io/whatsapp/images/icon.png"
                     class="rounded-circle"
@@ -359,7 +380,7 @@
                   />
                 </div>
                 <div class="col-sm-11 col-9 px-4">
-                  <h5 class="fs-3 mt-4">Anand</h5>
+                  <h5 class="mt-4">Anand</h5>
                   <p class="text-success fw-bolder fs-6">typing...</p>
                 </div>
               </div>
